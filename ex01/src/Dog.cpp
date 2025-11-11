@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:58:24 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 15:54:14 by hnemmass         ###   ########.fr       */
+/*   Updated: 2025/11/11 16:59:05 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ Dog::~Dog()
 
 void Dog::makeSound() const
 {
-	std::cout << "Meow!	Purr...	Hiss!	Mew!" << std::endl;
+	std::cout << "Woof!	Bark!	Ruff!	Arf!" << std::endl;
 }
 
 std::string Dog::getType() const
