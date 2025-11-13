@@ -6,13 +6,16 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:52:02 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 17:04:04 by hnemmass         ###   ########.fr       */
+/*   Updated: 2025/11/13 15:35:08 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "include/Animal.hpp"
+#include "include/WrongAnimal.hpp"
 #include "include/Dog.hpp"
+#include "include/WrongDog.hpp"
 #include "include/Cat.hpp"
+#include "include/WrongCat.hpp"
 #include "include/Brain.hpp"
 
 int main()
@@ -44,6 +47,10 @@ int main()
 			std::cout << a[j]->getType() << std::endl;
 		std::cout << "--------------------------" << std::endl;
 	}
+
+	std::cout << "--------------------------" << std::endl;
+		a[0]->getIdeas();
+	std::cout << "--------------------------" << std::endl;
 	
 
 	for (int j = 0; j < 10; j++)
@@ -52,43 +59,42 @@ int main()
 			delete a[j];
 		std::cout << "--------------------------" << std::endl;
 	}
-}
 
-// int main()
-// {
-// 	const Animal* j = new Dog();
-// 	std::cout << "--------------------------" << std::endl;
+	// ----------- testing WrongAnimals
 
-// 	const Animal* i = new Cat();
-// 	std::cout << "--------------------------" << std::endl;
+	// WrongAnimal *a1[10];
 
-// 	const Animal* k;
-// 	std::cout << "--------------------------" << std::endl;
+	// for (int i = 0 ; i < 10; i++)
+	// {
+	// 	std::cout << "--------------------------" << std::endl;
+	// 	if (i % 2 == 0)
+	// 		a1[i] = new WrongDog();
+	// 	else
+	// 		a1[i] = new WrongCat();
+	// 	std::cout << "--------------------------" << std::endl;
+	// }
 
-// 	Cat a;
-// 	Cat b(a);
-// 	Dog c;
-// 	Dog d;
 
-// 	d = c;
-// 	k = j;
-// 	std::cout << "--------------------------" << std::endl;
-
-	 
-// 	i->getIdeas();
-// 	std::cout << "--------------------------" << std::endl;
+	// for (int j = 0; j < 10; j++)
+	// {
+	// 	std::cout << "--------------------------" << std::endl;
+	// 		a1[j]->makeSound();
+	// 	std::cout << "--------------------------" << std::endl;
+	// }
 	
-// 	k->makeSound();
-// 	std::cout << "--------------------------" << std::endl;
 
-// 	delete j;//should not create a leak
-// 	std::cout << "--------------------------" << std::endl;
+	// for (int j = 0; j < 10; j++)
+	// {
+	// 	std::cout << "--------------------------" << std::endl;
+	// 		std::cout << a1[j]->getType() << std::endl;
+	// 	std::cout << "--------------------------" << std::endl;
+	// }
+	
 
-// 	delete i;
-// 	std::cout << "--------------------------" << std::endl;
-
-// 	// delete k;
-// 	std::cout << "--------------------------" << std::endl;
-
-// 	return 0;
-// }
+	// for (int j = 0; j < 10; j++)
+	// {
+	// 	std::cout << "--------------------------" << std::endl;
+	// 		delete a1[j];
+	// 	std::cout << "--------------------------" << std::endl;
+	// }
+}
