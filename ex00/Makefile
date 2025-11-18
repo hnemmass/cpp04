@@ -1,16 +1,19 @@
 NAME = Animal
-CC = c++ -std=c++98 -Wall -Werror -Wextra
+CXX = c++ -std=c++98 -Wall -Werror -Wextra
 
-SRC = src/Animal.cpp src/Dog.cpp src/Cat.cpp src/main.cpp
+SRC = src/Animal.cpp src/Dog.cpp src/Cat.cpp src/main.cpp\
+	src/WrongAnimal.cpp src/WrongDog.cpp src/WrongCat.cpp
+INC = include/Animal.hpp include/Dog.hpp include/Cat.hpp \
+	include/WrongAnimal.hpp include/WrongDog.hpp include/WrongCat.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CXX) $(OBJ) -o $(NAME)
 
-%.o: %.cpp include/Animal.hpp include/Dog.hpp include/Cat.hpp
-	$(CC) -c $< -o $@
+%.o: %.cpp $(INC)
+	$(CXX) -c $< -o $@
 
 clean:
 	rm -rf $(OBJ)
@@ -18,6 +21,6 @@ clean:
 fclean: clean
 	rm -rf $(NAME)
 
-re: fclean make
+re: fclean all
 
-.PHONY= re fclean clean all
+.PHONY: re fclean clean all
