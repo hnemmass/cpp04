@@ -6,16 +6,16 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:52:02 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/13 15:19:55 by hnemmass         ###   ########.fr       */
+/*   Updated: 2025/12/05 14:09:33 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/Animal.hpp"
-#include "include/WrongAnimal.hpp"
-#include "include/Dog.hpp"
-#include "include/WrongDog.hpp"
-#include "include/Cat.hpp"
-#include "include/WrongCat.hpp"
+#include "../include/Animal.hpp"
+#include "../include/WrongAnimal.hpp"
+#include "../include/Dog.hpp"
+#include "../include/WrongDog.hpp"
+#include "../include/Cat.hpp"
+#include "../include/WrongCat.hpp"
 
 int main()
 {
