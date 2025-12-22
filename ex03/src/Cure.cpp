@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:24:51 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/17 11:25:07 by hnemmass         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:18:04 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,5 @@ Cure *Cure::clone() const
 
 void Cure::use(ICharacter& target)
 {
-	std::cout << "Cure: * heals " << target.getName() << "’s wounds *" << std::endl;
+	std::cout << "* heals " << target.getName() << "\'" "s wounds *" << std::endl;
 }
