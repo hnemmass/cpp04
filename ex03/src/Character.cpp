@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 16:14:38 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/17 11:20:55 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/11 19:51:48 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,11 @@ void Character::equip(AMateria *m)
 
 void Character::unequip(int idx)
 {
-	if (idx >= 0 && idx < 4)
+	if (idx >= 0 && idx < 4 && this->inventory[idx])
+	{
+		delete this->inventory[idx];
 		this->inventory[idx] = NULL;
+	}
 	return ;
 }
 
