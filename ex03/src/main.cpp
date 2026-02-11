@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 20:06:34 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/11 19:52:10 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/11 20:14:16 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,20 @@ int main()
 	me->equip(tmp);
 	
 	ICharacter* bob = new Character("bob");
+
+	bob->equip(tmp);
+	tmp = src->createMateria("ice");
+	bob->equip(tmp);
+	tmp = src->createMateria("cure");
+	bob->equip(tmp);
+	tmp = src->createMateria("ice");
+	bob->equip(tmp);
 	
 	me->use(0, *bob);
 	me->use(1, *bob);
 	me->use(0, *me);
+	bob->use(2, *me);
+	bob->use(3, *me);
 	
 	me->unequip(1);
 	me->unequip(1);
