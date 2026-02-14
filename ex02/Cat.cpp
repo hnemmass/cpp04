@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:58:33 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/14 18:14:39 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:32:09 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ Cat::Cat(const Cat &other):
 Animal()
 {
 	std::cout << "the Cat copy constructor is called" << std::endl;
-	delete this->b;
 	this->b = new Brain(*other.b);
 	this->type = other.type;	
 }
