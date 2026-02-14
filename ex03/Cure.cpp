@@ -6,11 +6,11 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:24:51 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/12/22 19:18:04 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:17:06 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Cure.hpp"
+#include "Cure.hpp"
 
 Cure::Cure():
 AMateria()

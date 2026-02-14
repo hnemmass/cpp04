@@ -6,11 +6,11 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 15:57:53 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/14 15:38:45 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:17:29 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/MateriaSource.hpp"
+#include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource()
 {

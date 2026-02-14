@@ -6,11 +6,11 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:25:45 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/17 11:28:00 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:17:12 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Ice.hpp"
+#include "Ice.hpp"
 
 Ice::Ice():
 AMateria()

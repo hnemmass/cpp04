@@ -6,16 +6,16 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 20:06:34 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/14 16:02:00 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:17:21 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/AMateria.hpp"
-#include "../include/IMateriaSource.hpp"
-#include "../include/MateriaSource.hpp"
-#include "../include/Ice.hpp"
-#include "../include/Cure.hpp"
-#include "../include/Character.hpp"
+#include "AMateria.hpp"
+#include "IMateriaSource.hpp"
+#include "MateriaSource.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
+#include "Character.hpp"
 
 
 int main()

@@ -6,11 +6,11 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 16:14:38 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/14 15:47:57 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:17:00 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Character.hpp"
+#include "Character.hpp"
 
 AMateria* Character::unequippedMaterias[1000] = {NULL};
 int Character::unequippedCount = 0;

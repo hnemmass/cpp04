@@ -1,10 +1,10 @@
 NAME = Interface
 CXX = c++ -std=c++98 -Wall -Werror -Wextra #-fsanitize=address
 
-SRC = src/AMateria.cpp src/Character.cpp src/Cure.cpp src/Ice.cpp src/main.cpp\
-	src/MateriaSource.cpp
-INC = include/AMateria.cpp include/Character.cpp include/Cure.cpp include/Ice.cpp include/main.cpp\
-	include/MateriaSource.cpp include/ICharacter.hpp include/IMateriaSource.hpp
+SRC = AMateria.cpp Character.cpp Cure.cpp Ice.cpp main.cpp\
+	MateriaSource.cpp
+INC = AMateria.hpp Character.hpp Cure.hpp Ice.hpp\
+	MateriaSource.cpp ICharacter.hpp IMateriaSource.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

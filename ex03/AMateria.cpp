@@ -6,11 +6,11 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 13:32:24 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/17 11:13:33 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 18:16:53 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/AMateria.hpp"
+#include "AMateria.hpp"
 
 AMateria::AMateria()
 {
