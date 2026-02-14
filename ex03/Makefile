@@ -1,5 +1,5 @@
 NAME = Interface
-CXX = c++ -std=c++98 -Wall -Werror -Wextra #-fsanitize=address
+CXX = c++ -std=c++98 -Wall -Werror -Wextra
 
 SRC = AMateria.cpp Character.cpp Cure.cpp Ice.cpp main.cpp\
 	MateriaSource.cpp

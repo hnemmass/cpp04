@@ -1,10 +1,10 @@
 NAME = Animal
 CXX = c++ -std=c++98 -Wall -Werror -Wextra
 
-SRC = src/Animal.cpp src/Dog.cpp src/Cat.cpp src/main.cpp\
-	src/WrongAnimal.cpp src/WrongDog.cpp src/WrongCat.cpp
-INC = include/Animal.hpp include/Dog.hpp include/Cat.hpp \
-	include/WrongAnimal.hpp include/WrongDog.hpp include/WrongCat.hpp
+SRC = Animal.cpp Dog.cpp Cat.cpp main.cpp\
+	WrongAnimal.cpp WrongDog.cpp WrongCat.cpp
+INC = Animal.hpp Dog.hpp Cat.hpp \
+	WrongAnimal.hpp WrongDog.hpp WrongCat.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
