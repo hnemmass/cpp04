@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:58:24 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 16:59:05 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:11:06 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ Dog::Dog(const Dog &other):
 Animal()
 {
 	std::cout << "the Dog copy constructor is called" << std::endl;
-	delete this->b;
 	this->b = new Brain(*other.b);
 	this->type = other.type;	
 }
@@ -57,7 +56,7 @@ std::string Dog::getType() const
 	return (this->type);
 }
 
-void Dog::getIdeas() const
+void Dog::printIdeas() const
 {
 	for (int i = 0; i < 100; i++)
 		std::cout << this->b->ideas[i] << std::endl;

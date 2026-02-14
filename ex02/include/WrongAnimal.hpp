@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 14:56:03 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/13 14:59:54 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:03:20 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class WrongAnimal
 		WrongAnimal &operator=(const WrongAnimal &other);
 		virtual ~WrongAnimal();
 
-		virtual void makeSound() const;
+		void makeSound() const;
 		std::string getType() const;
 };
 

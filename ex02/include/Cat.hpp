@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:59:33 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 15:52:45 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:11:06 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Cat: public Animal
 
 		void makeSound() const;
 		std::string getType() const;
-		void getIdeas() const;
+		void printIdeas() const;
 };
 
 #endif

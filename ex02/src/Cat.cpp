@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:58:33 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 17:03:21 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:11:06 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ std::string Cat::getType() const
 	return (this->type);
 }
 
-void Cat::getIdeas() const
+void Cat::printIdeas() const
 {
 	for (int i = 0; i < 100; i++)
 		std::cout << this->b->ideas[i] << std::endl;

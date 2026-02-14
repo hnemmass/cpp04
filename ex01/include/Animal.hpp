@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:05:49 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/11 15:55:16 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:11:06 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Animal
 
 		virtual void makeSound() const;
 		std::string getType() const;
-		virtual void getIdeas() const;
+		virtual void printIdeas() const;
 };
 
 #endif

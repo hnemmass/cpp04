@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:52:43 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/10 17:51:35 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:06:51 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 	
 Animal::Animal()
 {
+	type = "default Animal";
 	std::cout << "the Animal constructor is called" << std::endl;
 }
 

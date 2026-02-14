@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.c                                      :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 14:52:35 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/13 14:57:49 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:08:39 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 	
 WrongAnimal::WrongAnimal()
 {
+	type = "default WrongAnimal";
 	std::cout << "the WrongAnimal constructor is called" << std::endl;
 }
 
