@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 16:14:21 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/16 20:14:57 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:33:53 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ class Character: virtual public ICharacter
 	private:
 		std::string name;
 		AMateria *inventory[4];
+        static AMateria* unequippedMaterias[1000]; 
+        static int unequippedCount;
 	
 	public:
 		Character();
@@ -32,6 +34,7 @@ class Character: virtual public ICharacter
 		std::string const &getName() const;
 		void equip(AMateria *m);
 		void unequip(int idx);
+		static void cleanupUnequippedMaterias();
 		void use(int idx, ICharacter& target);
 };
 

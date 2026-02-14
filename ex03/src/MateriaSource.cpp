@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 15:57:53 by hnemmass          #+#    #+#             */
-/*   Updated: 2025/11/17 11:24:13 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:38:45 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,18 +46,26 @@ MateriaSource &MateriaSource::operator=(const MateriaSource &other)
 	return (*this);
 }
 
-void MateriaSource::learnMateria(AMateria *m)
+void MateriaSource::learnMateria(AMateria *aMateria)
 {
-	int i = 0;
-	while (i < 4)
-	{
-		if (!slots[i])
-		{
-			slots[i] = m;
-			return ;
-		}
-		i++;
-	}
+    if (!aMateria)
+        return;
+
+    for (int i = 0; i < 4; i++)
+    {
+        if (slots[i] == aMateria)
+            return;
+    }
+
+    for (int i = 0; i < 4; i++)
+    {
+        if (!slots[i])
+        {
+            slots[i] = aMateria;
+            return;
+        }
+    }
+    delete aMateria;
 }
 
 AMateria *MateriaSource::createMateria(std::string const &type)

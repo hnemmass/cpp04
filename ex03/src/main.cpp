@@ -6,7 +6,7 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 20:06:34 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/11 20:14:16 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 16:02:00 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ int main()
 	
 	ICharacter* bob = new Character("bob");
 
+	tmp = src->createMateria("cure");
+	bob->equip(tmp);
 	bob->equip(tmp);
 	tmp = src->createMateria("ice");
 	bob->equip(tmp);
@@ -51,11 +53,14 @@ int main()
 	
 	me->unequip(1);
 	me->unequip(1);
+	bob->unequip(2);
 	me->use(1, *bob);
 	
 	delete bob;
 	delete me;
 	delete src;
+	
+	Character::cleanupUnequippedMaterias();
 	
 	return 0;
 }

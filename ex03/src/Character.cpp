@@ -6,11 +6,14 @@
 /*   By: hnemmass <hnemmass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 16:14:38 by hnemmass          #+#    #+#             */
-/*   Updated: 2026/02/11 20:12:32 by hnemmass         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:47:57 by hnemmass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Character.hpp"
+
+AMateria* Character::unequippedMaterias[1000] = {NULL};
+int Character::unequippedCount = 0;
 
 Character::Character():
 name("Default")
@@ -65,6 +68,14 @@ const std::string &Character::getName() const
 void Character::equip(AMateria *m)
 {
 	int i = 0;
+
+	if (!m)
+		return ; 
+	for (int i = 0; i < 4; i++)
+    {
+        if (this->inventory[i] == m) 
+            return;
+    }
 	while (i < 4)
 	{
 		if (!inventory[i])
@@ -74,13 +85,20 @@ void Character::equip(AMateria *m)
 		}
 		i++;
 	}
+	delete m;
 }
 
 void Character::unequip(int idx)
 {
-	if (idx >= 0 && idx < 4)
-		this->inventory[idx] = NULL;
-	return ;
+    if (idx >= 0 && idx <= 3 && this->inventory[idx])
+    {
+        if (unequippedCount < 1000)
+        {
+            unequippedMaterias[unequippedCount] = this->inventory[idx];
+            unequippedCount++;
+        }
+        this->inventory[idx] = NULL;
+    }
 }
 
 void Character::use(int idx, ICharacter &target)
@@ -93,6 +111,16 @@ void Character::use(int idx, ICharacter &target)
 		}
 	}
 	return ;
+}
+
+void Character::cleanupUnequippedMaterias()
+{
+    for (int i = 0; i < unequippedCount; ++i)
+    {
+        delete unequippedMaterias[i];
+        unequippedMaterias[i] = NULL;
+    }
+    unequippedCount = 0;
 }
 
 Character::~Character()
